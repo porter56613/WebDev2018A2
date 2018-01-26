@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+</head>
+
+<body>
+    <h1>Adventure Game</h1> 
+    
+    <script>
+   var score=0;
+    var daggerAttack=1;
+        var longbowAttack=6;
+        var longswordAttack=5;
+        var shortbowAttack=4;
+        
+        Start();
+        
+        function Start()
+        {
+            var playerName = prompt("You dare awake the Narrator... Who dares to disturb me?");
+            
+            alert("Well, you are very brave " +playerName+ ". You are about to embark on an epic adventure. ");
+            
+            var confirmYes=confirm("Are you ready to begin the quest ? ");
+            
+            if(confirmYes)
+                {
+                   Hut(); 
+                    
+                    
+                    
+                }
+            else{
+                
+                alert("You wasted my time, why do you even come here. Please Restart and face my wrath...");
+                
+                
+                
+            }
+            
+            
+            function Hut()
+            {
+                
+                
+                alert("Well you are quite the brave lad/ladess " +playerName);
+                alert("You are in a small cottage. You are in a room full of weapons you may pick up one . You see a longsword, a longbow, a shortbow, and a dagger (exe. type 'pick up shortbow'  ) ");
+                
+                
+                var weapon= prompt("Which do you choose?");
+                if(weapon=="pick up dagger")
+                
+                {
+                    alert("I knew you were the sort to pick the worst weapon, what a retard...");
+                    alert("The dagger has "+daggerAttack+" attack points.");
+                    alert("You may now leave the humble cottage");
+                
+                    Forest();
+                }
+                
+                else if(weapon=="pick up shortbow")
+                {
+                    
+                    alert("You now have the shortbow. A weapon even a Democrat can use!");
+                    alert("The shortbow has "+shortbowAttack+" attack points.");
+                 alert("You may now leave the humble cottage");
+                Forest();
+                
+                }
+                else if(weapon=="pick up longbow")
+                    {
+                        
+                        alert("Ah yes the longbow, the most respectable weapon. You must be very greedy.");
+                        alert("The longbow has "+longbowAttack+" attack points.");
+                         alert("You may now leave the humble cottage");
+                Forest();
+                    }
+                else if(weapon=="pick up longsword")
+                    {
+                        
+                        alert("Can you even hold it my dude? Are you even buff enough. I guess you are... yes, you may have it...");
+                        alert("The longsword has "+longswordAttack+" attack points.");
+                    alert("You may now leave the humble cottage");
+                Forest();
+                    }
+                else
+                    {
+                        alert("You failed to pick an option... You are wasting my time. You are now dead. You have been slain....");
+                        alert("Your score is: "+score );
+                        
+                        
+                    }
+                
+                
+            }
+                
+        } // end start
+        
+        function Forest()
+        {
+            
+            alert("You are in a clearing outside the cottage...");
+            var millisecondsToWait = 5000;
+
+            setTimeout(function() {
+   
+                alert("What are you looking at... you are the adventurerer here...");
+                
+                
+                setTimeout(function() {
+   
+                alert("Fine, Ill give you the options, since you cant think of anything original to do");
+                
+                    
+               var clearingchoice= prompt("Ok, you're in a clearing, you see a castle up on a hill, you see a mushroom on the ground and you a house to the side of the castle (type where you want to go , exe  'go to house' or 'pick up mushroom' )");
+                    
+                    if(clearingchoice=="pick up mushroom" || clearingchoice=="pick up shroom" )
+                        {
+                            alert("You should know better to not pick up stuff that isnt yours, haha you are now dead and now i can go back to my nap.")
+                            
+                            
+                        }
+                    
+                    else if
+                        {
+                            
+                            
+                            
+                        }
+                    
+                    
+                    
+                    
+                    // work
+                
+            }, millisecondsToWait);
+                
+            }, millisecondsToWait);
+            
+            
+            
+            
+            
+            
+        }
+        
+        
+    
+    
+    </script>
+    
+    
+</body>
+</html>
