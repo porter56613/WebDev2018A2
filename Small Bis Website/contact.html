@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <title>Crazy Jimmy's Watermelon Patch </title>
+    
+    
+        
+             <script>
+  function initMap() {
+    var mapCemetery = {lat: 40.131846, lng: -111.586037};
+    var center = mapCemetery;
+  var mapSettings = {
+    zoom: 18,
+    center: center,
+    tilt:0,
+    mapTypeId: "hybrid"
+
+  };
+  var map = new google.maps.Map(document.getElementById("map"), mapSettings);
+var marker =new google.maps.Marker({
+    
+  position:mapCemetery,
+  map:map,
+  title: "CRAZY JIMMY'S FARM"
+
+})
+  
+  }
+  
+  
+  
+  </script>
+        
+        
+    </head>
+    
+   
+    
+    <body>
+        
+        
+        <div id="container">
+        
+            
+            <header>
+            <h1>
+                
+                Crazy Jimmy's Watermelon Patch
+                
+                </h1>
+                
+            </header>
+           
+<link href="https://fonts.googleapis.com/css?family=Bangers|Julius+Sans+One|Press+Start+2P|Six+Caps" rel="stylesheet">
+
+            <link href="css/style.css" rel=stylesheet>
+           
+            <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="produce.html">Produce</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a  href="games.html">GAMES</a></li>
+                </ul>
+            
+            
+            
+            </nav>
+        <div id="content">
+            <h2 id="h2Contact">
+                Contact Jimmy
+            </h2>
+            
+            <form id="FormContact">
+            First Name:
+                <br>
+                <input type="text" name="FirstName">
+            <br>
+                Last Name:
+                <br>
+                
+                <input type="text" name="LastName">
+            <br>
+                Email Address:
+                <br>
+                <input type="text" name="EmailAddress">
+            <br>
+                Subject:
+                <br>
+                <input type="text " name="Subject">
+            
+                <br>
+                <br>
+                
+                Message:
+                <br>
+                <textarea cols="100" rows="50">
+                </textarea>
+                <br>
+                <button id="contactButton">SEND
+               
+                </button>
+               
+             
+                
+            </form>
+            <br>
+            <br>
+            
+            
+            
+                       <div id="map" style="width: 100%; height: 600px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7X3GfLN9cbUh0RSjBpJUFuD0B4afaNIA&callback=initMap"></script>
+ 
+            
+            
+            <br>
+            </div>
+            <br>
+            
+            
+            <footer>
+            <p>
+                Copyright &copy; 2017 Crazy Jimmy LLC 
+                </p>
+            
+            </footer>
+            
+        
+        
+        </div>
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+</html

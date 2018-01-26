@@ -1,0 +1,437 @@
+/* CSS StyleSheet */
+
+/*GLOBAL STYLE*/
+
+body
+{
+    background-color: greenyellow;
+    margin: 0;
+    padding: 0;
+    
+    
+    
+}
+
+div#container
+{
+    background-color:lawngreen;
+    width: 1024px;
+    margin: auto;  /*centers the container */
+    
+    
+}
+header
+{
+    background-color: limegreen;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    background-image: url('../images/wmbannerpic.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+}
+header h1
+{
+  text-align: center;
+padding-top: 50px;
+   color:whitesmoke;
+    text-shadow: 1px 1px 100px;
+    margin: 0;
+    
+
+/*  font-family: 'Julius Sans One', sans-serif;*/
+
+/* font-family: 'Bangers', cursive;*/
+
+   font-family: 'Press Start 2P', cursive;
+
+/*font-family: 'Six Caps', sans-serif;*/
+
+
+    
+    
+}
+nav
+{
+    width: 100%;
+    background-color: black;
+    clear: both;
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+    box-shadow: 2px 2px 2px gray;
+
+    
+    
+}
+nav ul
+{
+  margin: 0;  
+padding: 0;
+    overflow: hidden;
+    list-style: none;
+    
+    
+    
+    
+    
+}
+nav ul li
+{
+ float: left;
+    
+    
+    
+    
+    
+    
+    
+    
+}
+nav ul li a
+{
+   display: block;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+nav ul li a:hover
+{
+    background-color: purple;
+    color: white;
+    
+    
+}
+.active
+{
+    background-color: white;
+color: black;
+    
+    
+}
+
+
+footer{
+ 
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+.keepOpen
+{
+    clear: both;
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*index.html*/
+
+
+
+
+img#MainPic
+{
+    width: 400px;
+    display: block;
+    margin: auto;
+    border: 15px dashed seagreen;
+    float: left
+    
+}
+
+
+
+h3#pHome
+{
+    float: left;
+    width: 55%;
+    padding-left: 15px;
+    font-family: 'Julius Sans One', sans-serif;
+   
+}
+
+
+p#pNFH
+{
+    float: left;
+    
+}
+
+
+
+
+
+h2#h2Home
+{
+display: block;
+    float: none;
+    padding-left: 500px;
+    margin-bottom: 0;
+    margin-top: 20px;
+     font-family: 'Press Start 2P', cursive;
+    color: red;
+    
+    
+    
+}
+
+
+
+
+/*about*/
+
+
+
+
+
+
+h2#h2About
+{
+    
+    display: block;
+    float: none;
+   text-align: right;
+    margin-bottom: 0;
+    margin-top: 20px;
+     font-family: 'Press Start 2P', cursive;
+    color: red;
+    font-size: 20px;
+    padding-right: 50px;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+img#MainPicAbout
+{
+     width: 600px;
+    display: block;
+    margin: auto;
+    border: 5px inset yellowgreen;
+    float: left;
+    
+    
+    
+    
+}
+p#pAbout
+{
+    width: 39%;
+    float: left;
+    padding-left: 12px;
+    
+}
+
+#gallery
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    
+    
+    
+    
+}
+
+figure{
+    width: 250px;
+    
+    float: left;
+    background-color: black;
+    box-shadow: 1px 1px 10px gray;
+background: linear-gradient(blue,salmon);
+
+
+
+}
+
+figure img
+{
+   
+    display: block;
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+    
+    
+    
+}
+h2#h2Produce
+{
+    text-align: center;
+    color: red;
+   font-family: 'Press Start 2P', cursive;
+    
+    
+    
+    
+    
+}
+figcaption
+{
+    text-align: center;
+    color: white;
+    font-family: 'Bangers', cursive;
+    font-size: 20px;
+    
+    
+    
+}
+h2#h2Contact
+{
+    color: red;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    
+    
+    
+}
+h2#h2GM
+{
+    color: red;
+    text-align: center;
+        font-family: 'Press Start 2P', cursive;
+
+    
+    
+    
+}
+
+object#choGame
+{
+    width: 100%;
+    height: 1020px;
+    display: block;
+    margin: auto;
+    
+    
+    
+}
+h2#h2game
+{
+    color: red;
+    text-align: center;
+            font-family: 'Press Start 2P', cursive;
+
+    
+  
+    /*contact*/
+    
+    
+}
+form#FormContact
+{
+    margin-left: 20px;
+    
+
+    
+    
+    
+    
+}
+form input,textarea
+{
+    color: red;
+
+margin-bottom: 10px;
+   cursor: text; 
+text-indent: 5px;
+    
+    
+    
+    
+    
+    
+}
+
+button#contactButton
+{
+   width: 150px;
+    height: 25px;
+    font-family: 'Press Start 2P', cursive;
+color: red;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    box-shadow: 1px 1px 20px black;
+    
+    
+    
+    
+}
+
+
+button#btn
+{
+    float:left;
+    
+    
+    
+}
+h3#pAbout
+{
+    width: 39%;
+    float: left;
+    padding-left: 12px; 
+    
+    
+    
+}
