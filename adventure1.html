@@ -16,6 +16,7 @@
         var longswordAttack=5;
         var shortbowAttack=4;
         var playerName = prompt("You dare awake the Narrator... Who dares to disturb me?");
+        var up1=0;
         Start();
         
         function Start()
@@ -137,7 +138,7 @@
                         {
                             alert("You see a castle, you come to the gates... They are locked, but you see a gatekeeper in a booth to the side of the gate.(type 'go back to clearing', 'go to booth') ");
                             
-//                            Castle();
+                        Castle();
                             
                             
                             
@@ -184,12 +185,19 @@
         {
             
             alert("Ok you're at the house");
-                            var houseChoice=prompt("You see a boarded up door, and you see all the windows boarded up except one... You also see a paper on the ground... You see a metal grate on the ground (type 'go to grate', 'go to window', 'pick up paper' ) " ); 
+                            var houseChoice=prompt("You see a boarded up door, and you see all the windows boarded up except one... You also see a paper on the ground... You see a metal grate on the ground (type 'go to grate', 'go to window', 'pick up paper', 'go back' ) " ); 
             
             if(houseChoice=="go to grate")
                 {
                     
+                    Grate();
+                    
                     // work on grate
+                    
+                }
+             else if(houseChoice=="go back")
+                {
+                    Forest();
                     
                 }
             else if(houseChoice=="pick up paper")
@@ -224,6 +232,8 @@
                             // work on window
                         
                         }
+               
+                
                 else
                     {
                         DeadOption();
@@ -244,6 +254,12 @@
 
         function Window()
         {
+           alert("You see a lonely hermit on the ground , he is blind... He is just sitting there");
+            alert("He notices your presence and says... one day there was peace in our kingdom, but now there is no peace, a great evil has taken over... I dare not speak his name... I sense his prensence near you... beware...");
+            alert("I can help you , let me upgrade one of your weapons....");
+            alert("would you like me to...?");
+            
+            WeaponUpgrade();
             
             
             
@@ -252,13 +268,80 @@
         function TheChoice()
         {
             
-            
+            // boss
             
         }
         
         // work on grate and castle
     
-    
+    function WeaponUpgrade()
+        {
+            var weaponchoice2= prompt("Would you like me to upgrade your weapon ? ('yes', 'no' )");
+            
+            
+        if(weaponchoice2=="yes"&& up1==0)
+            {
+                up1=1;
+                
+            shortbowAttack=10;
+                longbowAttack=10;
+                daggerAttack=10;
+                longswordAttack=10;
+                
+                alert("It is done, your weapon now has " + longbowAttack+ " attack points ");
+                
+                
+                
+            }
+            
+            else if(up1==1)
+                {
+                    alert("My power is sapped, come back later...");
+                    
+                    
+                }
+            else if (weaponchoice2=="no")
+                {
+                    alert("smart man...");
+                    
+                    alert("You leave the house and go to the clearing...");
+                    
+                    House();
+                }
+            else
+                {
+                    DeadOption();
+                    
+                    
+                }
+            
+               
+        }
+        
+        function Grate()
+        {
+            
+            
+            
+            
+            
+            
+            
+        }
+        
+        function Castle()
+        {
+            
+            
+            
+            
+            
+        }
+        
+        
+        
+        
+        
     </script>
     
     
