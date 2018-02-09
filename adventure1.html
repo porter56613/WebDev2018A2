@@ -17,13 +17,17 @@
         var shortbowAttack=4;
         var playerName = prompt("You dare awake the Narrator... Who dares to disturb me?");
         var up1=0;
+        var battleAxeattack=60;
+        var attackpoints;
+        var ba=0;
+        var kingdead=false;
         Start();
         
         function Start()
         {
             
             
-            alert("Well, you are very brave " +playerName+ ". You are about to embark on an epic adventure. ");
+            alert("Well, you are very brave " +playerName+ ". You are about to embark on an epic adventure. You MUST FOLLOW my INSTRUCTIONS EXACTLY");
             
             var confirmYes=confirm("Are you ready to begin the quest ? ");
             
@@ -104,7 +108,7 @@
         {
             
             alert("You are in a clearing outside the cottage...");
-            var millisecondsToWait = 5000;
+            var millisecondsToWait = 2000;
 
             setTimeout(function() {
    
@@ -170,14 +174,14 @@
             
             alert("you are DEAD...");
             alert("Your score is: "+score );
-            
+            alert("To restart refresh the page...");
             
         }
         function DeadOption()
         {
              alert("You failed to pick an option... You are wasting my time. You are now dead. You have been slain....");
                         alert("Your score is: "+score );
-            
+            alert("To restart refresh the page...");
             
         }
         
@@ -211,14 +215,24 @@
                 alert("Well thats not good indeed...");
                 alert("Your probably wondering how i know what you were thinking... Well im the narrator I know all thoughts of everyone in this kingdom...");
                 alert("Since you now know i will have to dispatch of you...");
-                var paperchoice= prompt(" 'Run', 'Fight' ");
-        TheChoice();
-                
+                var paperchoice= prompt(" 'run', 'fight' ");
+        
+                if(paperchoice=="fight")
+                {
+                TheChoice();
+                }
+                else if(paperchoice=="run")
+                    {
+                        alert("You run and fall into a pit of poisonous snakes... Did you really think you could escape from me... I can create events... Like the snakes you just fell in...");
+                        Dead();
+                        
+                        
+                    }
             }
             
             else if(houseChoice=="go to window")
             {
-                var windowchoice=prompt("Your at a window, you can enter or go back to the view of the house(type 'go back', or 'go in window')")
+                var windowchoice=prompt("Your at a window, you can enter or go back to the view of the house(type 'go back', or 'go in window')");
                 
                 if(windowchoice=="go back")
                 {
@@ -270,6 +284,15 @@
             
             // boss
             
+        
+        
+        
+        
+        
+        
+        
+        
+        
         }
         
         // work on grate and castle
@@ -288,8 +311,20 @@
                 daggerAttack=10;
                 longswordAttack=10;
                 
+                if(ba==0)
+                {
                 alert("It is done, your weapon now has " + longbowAttack+ " attack points ");
-                
+                score++;
+                 alert("You leave and go outside..");
+                        House();
+                }
+                else if(ba==1)
+                    {
+                        alert("you have the legendary battle axe... it now has 61 attack points");
+                        score+=5;
+                        alert("You leave and go outside..");
+                        House();
+                    }
                 
                 
             }
@@ -321,9 +356,41 @@
         function Grate()
         {
             
+          var gratechoice=  prompt("You arrive at the grate on the ground, you see down there is something... ('go down', 'go back')");
             
-            
-            
+            if(gratechoice=="go down")
+                {
+                    var trollchoice=prompt("You go down and you find a troll, you see that he is standing over something, do you ('fight', 'go back')");
+                
+                    if(trollchoice=="fight")
+                        {
+                            
+                                            Troll();
+
+                        }
+                    
+                    else if(trollchoice=="go back")
+                            {
+                            
+                            House();
+                            
+                            }
+                    else
+                        {
+                            DeadOption();
+                            
+                            
+                        }
+                }
+            if(gratechoice=="go back")
+                {
+                   House();    
+                }
+            else{
+                
+                DeadOption();
+                
+            }
             
             
             
@@ -332,13 +399,141 @@
         function Castle()
         {
             
+            var castlechoicee=prompt("Welcome to the castle, would you like to see the king ? ('yes', 'go back')");
             
+            if (castlechoicee=="go back")
+                {
+                    Forest();
+                    
+                }
+            
+            
+            
+            if(castlechoicee=="yes"&& kingdead==false)
+                {
+                    alert("You are lead to the kings room...");
+                    
+                    alert("King: Who are you?");
+                    
+                    alert("You: I am "+playerName);
+                    
+                    alert("King: Why are you here ?");
+                    
+                    alert("You: I came on an epic quest...");
+                    
+                    if(ba==0)
+                    {
+                        alert("King: Well , you can have my help. Let me give you this Battle Axe. The battle Axe has  "+battleAxeattack+" attack points." );
+                        ba=1;
+                        
+                    ba=1;
+                         var kincho=prompt("What do you do ? ( 'leave')");
+                    
+                        
+                        if (kincho=='leave')
+                            {
+                                alert("You left");
+                                    Castle();                                
+                                
+                            }
+                        else{
+                            
+                            DeadOption();
+                            
+                        }
+                        
+                        
+                    
+                    }
+                    else if(ba==1){
+                        
+                       
+                        
+                        var kincho=prompt("What do you do ? ('leave')");                    
+                
+                       
+                        if (kincho=='leave')
+                            {
+                                alert("You left");
+                                Castle();                                
+                                
+                            }
+                        else{
+                            
+                            DeadOption();
+                            
+                        }
+                        
+                    }
+                    else{
+                        
+                        DeadOption();
+                        
+                    }
+                   
+                    
+                    
+                    // work
+                    
+                }
+           
+        }
+        
+        function Troll()
+        {
+            score++;
+            
+            alert("You have chosen to fight the troll...");
+            alert("Your move...");
+           var trollfight=prompt("Do you... ('use weapon', 'talk', )");
+            
+            if(trollfight=="use weapon" && ba==1 && up1==1)
+                {
+                    alert("Your power was to great for him... You have slain the troll, and he left some treasure...");
+                    score+=67;
+                    EndGameT();
+                }
+                else if(trollfight=="use weapon" && ba==1 && up1!=1)
+            
+            {
+                alert("You died when he hit you after blocking your attack...");
+                Dead();
+                
+            }
+            else if(trollfight=="use weapon" && ba!=1 && up1!=1)
+            {
+                alert("You died when he hit you after blocking your attack...");
+                Dead();
+                
+                
+            }
+            
+            else if(trollfight=="talk")
+                {
+                    
+                    alert("You: Hey Troll..");
+                    alert("Troll:Hello im the troll, I live in this grate...You are tresspassing... You are going to die  ");
+                    alert("The troll beat you with your leg");
+                    Dead();
+                    
+                    
+                    
+                    
+                }
+            
+        }
+        
+        function EndGameT()
+        {
+            
+            alert("You beat the game... You got the lit ending ");
+            
+            alert("Your score is" +score);
+            alert("to play again refresh the page...");
             
             
             
         }
-        
-        
         
         
         
