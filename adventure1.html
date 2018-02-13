@@ -21,6 +21,7 @@
         var attackpoints;
         var ba=0;
         var kingdead=false;
+        var weaponA;
         Start();
         
         function Start()
@@ -57,12 +58,12 @@
                 
                 var weapon= prompt("Which do you choose?");
                 if(weapon=="pick up dagger")
-                
+               
                 {
                     alert("I knew you were the sort to pick the worst weapon, what a retard...");
                     alert("The dagger has "+daggerAttack+" attack points.");
                     alert("You may now leave the humble cottage");
-                
+                 weapon=weaponA;
                     Forest();
                 }
                 
@@ -73,7 +74,8 @@
                     alert("The shortbow has "+shortbowAttack+" attack points.");
                  alert("You may now leave the humble cottage");
                 Forest();
-                
+                                 weapon=weaponA;
+
                 }
                 else if(weapon=="pick up longbow")
                     {
@@ -82,6 +84,8 @@
                         alert("The longbow has "+longbowAttack+" attack points.");
                          alert("You may now leave the humble cottage");
                 Forest();
+                                  weapon=weaponA;
+   
                     }
                 else if(weapon=="pick up longsword")
                     {
@@ -90,6 +94,8 @@
                         alert("The longsword has "+longswordAttack+" attack points.");
                     alert("You may now leave the humble cottage");
                 Forest();
+                                     weapon=weaponA;
+
                     }
                 else
                     {
@@ -285,11 +291,47 @@
             // boss
             
         
+        alert("You want to fight now...");
+            alert("Well bring it bro...");
         
+        var thecoisc=prompt("'run','use weapon'");
+            
+            if(thecoisc=="use weapon"&& up1=0&&weaponA=="pick up dagger")
+                {
+                    
+                    alert("How did you know...?");
+                    alert("How did you know that the weapon that seemed the weakest would kill me....");
+                    alert("If you would have upgraded it in the house... it wouldnt have killed me...");
+                    alert("'The dagger was tipped with a special toxin , designed to kill only narrators...'");
+                    alert("'The Narrator has been slain...'");
+                    score+=5678;
+                EndGameTE();
+                
+                }
         
-        
-        
-        
+        else if(thecoisc=="use weapon" && up1==1)
+            {
+                alert("Your weapon isn't the right weapon to kill me... you will now die...");
+                score+=65;
+                Dead();
+                
+                
+            }
+         else if(thecoisc=="use weapon" && up1==0&& weaponA!="pick up dagger")
+            {
+                alert("Your weapon isn't the right weapon to kill me... you will now die...");
+                score+=45;
+                Dead();
+                
+                
+            } else if(thecoisc=="run")
+            {
+                alert("You cant run from me... I will kill you...");
+                score+=45;
+                Dead();
+                
+                
+            }
         
         
         
@@ -534,7 +576,17 @@
             
             
         }
-        
+        function EndGameTE()
+        {
+            
+            alert("You beat the game... You got the MOSTEST AWESOMEST ending ");
+            
+            alert("Your score is" +score);
+            alert("to play again refresh the page...");
+            
+            
+            
+        }
         
         
     </script>
