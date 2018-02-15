@@ -22,6 +22,16 @@
         var ba=0;
         var kingdead=false;
         var weaponA;
+    
+        var inventory={
+                coins:100,
+                smarts:2,
+                courage:4
+//                
+//                
+         }
+        
+        
         Start();
         
         function Start()
@@ -60,10 +70,12 @@
                 if(weapon=="pick up dagger")
                
                 {
+                    
                     alert("I knew you were the sort to pick the worst weapon, what a retard...");
                     alert("The dagger has "+daggerAttack+" attack points.");
                     alert("You may now leave the humble cottage");
-                 weapon=weaponA;
+                        weaponA=weapon;                  
+                    
                     Forest();
                 }
                 
@@ -74,7 +86,7 @@
                     alert("The shortbow has "+shortbowAttack+" attack points.");
                  alert("You may now leave the humble cottage");
                 Forest();
-                                 weapon=weaponA;
+                        weaponA=weapon;                  
 
                 }
                 else if(weapon=="pick up longbow")
@@ -84,7 +96,7 @@
                         alert("The longbow has "+longbowAttack+" attack points.");
                          alert("You may now leave the humble cottage");
                 Forest();
-                                  weapon=weaponA;
+                        weaponA=weapon;                  
    
                     }
                 else if(weapon=="pick up longsword")
@@ -94,7 +106,7 @@
                         alert("The longsword has "+longswordAttack+" attack points.");
                     alert("You may now leave the humble cottage");
                 Forest();
-                                     weapon=weaponA;
+                        weaponA=weapon;                  
 
                     }
                 else
@@ -126,7 +138,7 @@
                 alert("Fine, Ill give you the options, since you cant think of anything original to do");
                 
                     
-               var clearingchoice= prompt("Ok, you're in a clearing, you see a castle up on a hill, you see a mushroom on the ground and you a house to the side of the castle (type where you want to go , exe  'go to house' or 'pick up mushroom' )");
+               var clearingchoice= prompt("Ok, you're in a clearing, you see a castle up on a hill, you see a mushroom on the ground and you a house to the side of the castle (type where you want to go , exe  'go to house' or 'pick up mushroom' ) ");
                     
                     if(clearingchoice=="pick up mushroom" || clearingchoice=="pick up shroom" )
                         {
@@ -296,7 +308,7 @@
         
         var thecoisc=prompt("'run','use weapon'");
             
-            if(thecoisc=="use weapon"&& up1=0&&weaponA=="pick up dagger")
+            if(thecoisc=="use weapon"&& up1==0&&weaponA=="pick up dagger")
                 {
                     
                     alert("How did you know...?");
@@ -352,10 +364,11 @@
                 longbowAttack=10;
                 daggerAttack=10;
                 longswordAttack=10;
+                inventory.coins-=50;
                 
                 if(ba==0)
                 {
-                alert("It is done, your weapon now has " + longbowAttack+ " attack points ");
+                alert("It is done, your weapon now has " + longbowAttack+ " attack points You give him the 50 coins... you now have "+inventory.coins+" coins");
                 score++;
                  alert("You leave and go outside..");
                         House();
@@ -465,9 +478,10 @@
                     
                     if(ba==0)
                     {
-                        alert("King: Well , you can have my help. Let me give you this Battle Axe. The battle Axe has  "+battleAxeattack+" attack points." );
+                        alert("King: Well , you can have my help. Let me give you this Battle Axe. The battle Axe has  "+battleAxeattack+" attack points. 'You give him 50 coins as a token of respect'" );
                         ba=1;
-                        
+                        inventory.coins-=50;
+                        alert("you now have... "+inventory.coins+" coins");
                     ba=1;
                          var kincho=prompt("What do you do ? ( 'leave')");
                     
@@ -559,7 +573,7 @@
                     Dead();
                     
                     
-                    
+                     
                     
                 }
             
