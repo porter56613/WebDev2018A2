@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button" 
+onclick="Change()">
+    
+    Click Me!</button>
+
+    
+<script>
+    var change=0;
+    
+    function Change()
+    {
+        
+        if(change==0)
+            {
+        document.getElementById('id1').style.color = 'green';
+        
+        document.getElementById('id1').innerHTML="This was changed..."
+        
+        change=1;
+            }
+        else
+            {
+               document.getElementById('id1').style.color = 'purple';
+        
+        document.getElementById('id1').innerHTML="This was changed again..." 
+                change=0;
+                
+            }
+    }
+    
+    
+    
+    </script>
+</body>
+</html>
