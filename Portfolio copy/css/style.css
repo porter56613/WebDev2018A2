@@ -1,0 +1,41 @@
+body
+{
+    font-family: 'Cutive Mono', monospace;
+
+    
+    
+}
+.header
+{
+    text-align: center;
+    
+}
+.nav
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    
+}
+.liNav
+{
+    text-decoration: none;
+   
+text-align: center;
+    
+}
+.navA
+{
+    text-decoration: none;
+    width: 25%;
+ text-align: center;
+}
+#home:hover
+{
+    
+   background-color: black;
+    color: white;
+    
+    
+}
