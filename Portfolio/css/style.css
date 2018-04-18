@@ -1,0 +1,96 @@
+
+body
+{
+    font-family: 'Cutive Mono', monospace;
+
+    
+    
+}
+.header
+{
+    text-align: center;
+    
+}
+.nav
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    text-align: center;
+
+}
+.liNav
+{
+    text-decoration: none;
+   padding-left: 30px;
+    padding-right: 30px;
+text-align: center;
+
+}
+.navA
+{
+    text-decoration: none;
+    width: 25%;
+ text-align: center;
+}
+#h3Home
+{
+   display: flex;
+    flex-direction: column;
+    float: right;
+    width: 68%;
+    
+}
+#home
+{
+    background-color:lightcoral;
+    
+}
+#imgME
+{
+
+  
+    
+}
+#imgSpr
+{
+ float: left;
+    
+    
+}
+
+#h4home
+{
+    
+    float: right;
+    width: 68%
+    
+}
+
+
+.liNav:hover
+{
+    background-color: coral;
+
+
+
+
+
+
+}
+
+.keepo
+{
+    clear: both;
+    
+    
+}
+
+.footer
+{
+
+    text-align: center;
+
+    
+}
