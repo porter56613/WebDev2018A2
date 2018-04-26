@@ -40,12 +40,13 @@ text-align: center;
     width: 25%;
  text-align: center;
 }
-#h3Home
+#h3home
 {
-   display: flex;
-    flex-direction: column;
-    float: right;
-    width: 68%;
+    float: left;
+   
+   
+    
+    
     
 }
 #home
@@ -56,23 +57,26 @@ text-align: center;
 #imgME
 {
 
-  
+  float: left;
     
 }
 #imgSpr
 {
- float: left;
-    
+    float: left;
+ 
+margin-top: 60px;
     
 }
 
 #h4home
 {
     
-    float: right;
-    width: 68%
-    
+    float: left;
+    width: 68%;
+
 }
+
+
 
 
 .liNav:hover
@@ -118,12 +122,186 @@ margin-bottom: none;
 }
 
 
+@media screen and (max-width:878px)
+{
+    
+    #imgSpr
+    {
+       float: left;
+        
+        
+        
+        
+        
+    }
+    #h3Home
+    {
+        font-size: 17px;
+        
+        
+        
+    }
+    #h4Home
+    {
+       font-size: 17px; 
+        
+        
+        
+    }
+    
+    
+}
+
+
+@media screen and (max-width:688px)
+{
+  
+    
+    .nav
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+
+}
+.liNav
+{
+    text-decoration: none;
+   
+text-align: center;
+
+}
+.navA
+{
+    text-decoration: none;
+    
+ text-align: center;
+}
+    
+    #topPart{
+        font-size: 1px;
+        
+        
+    }
+    
+    #imgSpr
+    {
+        margin-top: 300px;
+        
+        
+        
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:473px)
+{
+  
+    
+    .nav
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+
+}
+.liNav
+{
+    text-decoration: none;
+   
+text-align: center;
+
+}
+.navA
+{
+    text-decoration: none;
+    
+ text-align: center;
+}
+    
+    #topPart{
+        font-size: 1px;
+        
+        
+    }
+    
+    #imgSpr
+    {
+        margin-top: 450px;
+        
+        
+        
+    }
+    
+    
+    
+}
+@media screen and (max-width:360px)
+{
+  
+    
+    .nav
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+
+}
+.liNav
+{
+    text-decoration: none;
+   
+text-align: center;
+
+}
+.navA
+{
+    text-decoration: none;
+    
+ text-align: center;
+}
+    
+    #topPart{
+        font-size: 1px;
+        
+        
+    }
+    
+    #imgSpr
+    {
+        margin-top: 525px;
+        
+        
+        
+    }
+    
+    
+    
+}
 
 
 
 
 
-
-
+#topPart
+{
+    height: 500px;
+    
+    
+    
+}
+#botPart
+{
+    height: 500px;
+    
+}
 
 
