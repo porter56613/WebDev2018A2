@@ -347,7 +347,13 @@ text-align: center;
         
         
     }
-    
+     #camvid
+    {
+        
+        width: 444px;
+        height:175px;;
+        
+    }
    
 
 
@@ -372,7 +378,7 @@ text-align: center;
         
         
     }
-    
+   
    
 
 
@@ -461,20 +467,59 @@ text-align: center;
     
     #twitchy
     {
-        width: 175px;
-        height: 150px;
+        width: 400px;
+        height: 250px;
         
     }
     
     #chat
     {
-        width: 175px;
-        height: 150px;
+        width: 200px;
+        height: 250px;
+        
+    }
+    #camvid
+    {
+        
+        width: 213px;
+        height:175px;;
         
     }
     
+    
+    
+    
 }
-    @media screen and (max-width:476px)
+  
+ @media screen and (max-width:1010px)
+{
+  
+    
+
+   
+    
+    
+    #twitchy
+    {
+        width: 300px;
+        height: 175px;
+        
+    }
+    
+    #chat
+    {
+        width: 150px;
+        height: 175px;
+        
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:476px)
 {
   
     
@@ -509,24 +554,102 @@ text-align: center;
         
     }
 
-
+#camvid
+    {
+        
+        width: 360px;
+        height: 202.5px;;
+        
+    }
+    
+    
 }
 
    
+/*SKILLS*/
+
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white;
+}
+
+.html {width: 80%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 60%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}
+.linux{width: 20%;background-color: orange;}
+.lol{width: 100%; background-color: purple;}
+.vidss{width: 80%; background-color: chartreuse;}
+.shop{width: 80%; background-color:sandybrown}
 
 
 
+
+
+
+
+#bodySkill
+{
+    align-content: center;
+    align-self: center;
+    padding-left: 2%;
+    
+}
+
+#imgSkill
+{
+width: 100%;
+    height: 135px;
+    
+    
+    
+}
+
+@media screen and (min-width:690px)
+{
+  
+    #imgSkill
+    {
+        height: 270px;
+        
+        
+        
+    }
     
 
+    
+    
+}
 
 
+@media screen and (min-width:1057px)
+{
+  
+    #imgSkill
+    {
+        height: 400px;
+        
+        
+        
+    }
+    
+
+    
+    
+}
 
 
-
-
-
-
-
+/*TODO FIX THE SKILL PAGE AND RESIZE IMG*/
 
 
 
